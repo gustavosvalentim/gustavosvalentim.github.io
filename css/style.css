@@ -1,0 +1,15 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.page-title {
+	text-decoration: underline;
+}
+
+#github-icon {
+	font-size: 24px;
+}
+
+.site-section {
+	height: 100vh;
+}
