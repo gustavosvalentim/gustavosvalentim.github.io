@@ -26,44 +26,48 @@
 </style>
 
 <body>
-  <nav class="h-24 px-24 py-4">
+  <nav class="h-24 px-16 py-4">
     <ul class="flex justify-end gap-8">
-      <li class="text-xl">
+      <li class="text-md">
         <a href="https://github.com/gustavosvalentim">
           <i class="fa-brands fa-github"></i>
-          Github
+          <span class="hidden md:inline">Github</span>
         </a>
       </li>
-      <li class="text-xl">
+      <li class="text-md">
         <a href="https://www.linkedin.com/in/gustavosvalentim">
           <i class="fa-brands fa-linkedin"></i>
-          Linkedin
+          <span class="hidden md:inline">Linkedin</span>
         </a>
       </li>
-      <li class="text-xl">
+      <li class="text-md">
         <a href="/resume/Gustavo-Valentim_Resume_EN.pdf" target="_blank">
           <i class="fa-solid fa-file-lines"></i>
-          Resume
+          <span class="hidden md:inline">Resume</span>
         </a>
       </li>
     </ul>
   </nav>
 
-  <main class="w-128 mx-auto">
-    <h1 class="text-3xl">Gustavo Valentim</h1>
-    <h2 class="text-xl mt-2">Senior Software Engineer</h2>
-    <div class="flex flex-col gap-8 mt-4">
-      <p>
-        I'm a software engineer from Brazil with a decade of experience, focusing more on backend development,
-        cloud infrastructure and software architecture. It's worth mentioning my participation on ClearSale, where I
-        built their Single Sign On solution and integration with the legacy platform built with .NET Framework.
-      </p>
-      <p>
-        Over the years I worked building software for different industries, participating in all steps of the software
-        development life cycle, from planning features to developing, deploying and maintaining them.
-      </p>
+  <main class="w-80 md:w-180 mx-auto flex flex-col md:flex-row gap-8">
+    <div>
+      <img src="/static/img/Gustavo-Valentim_picture.png" alt="Gustavo Valentim picture"
+        class="rounded-md h-56 mx-auto md:h-auto">
+    </div>
+
+    <div>
+      <h1 class="text-3xl">Gustavo Valentim</h1>
+      <h2 class="text-xl mt-2">Senior Software Engineer</h2>
+      <div class="flex flex-col gap-8 mt-4">
+        <p>
+          I'm a software engineer from Brazil with a decade of experience, specializing in backend development, cloud
+          infrastructure, and software architecture.
+        </p>
+      </div>
     </div>
   </main>
+
+  <script src="/static/scripts/i18n.js"></script>
 </body>
 
 </html>
