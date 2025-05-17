@@ -28,19 +28,19 @@
 <body>
   <nav class="h-24 px-16 py-4">
     <ul class="flex justify-end gap-8">
-      <li class="text-md">
+      <li class="text-xl md:text-md">
         <a href="https://github.com/gustavosvalentim">
           <i class="fa-brands fa-github"></i>
           <span class="hidden md:inline">Github</span>
         </a>
       </li>
-      <li class="text-md">
+      <li class="text-xl md:text-md">
         <a href="https://www.linkedin.com/in/gustavosvalentim">
           <i class="fa-brands fa-linkedin"></i>
           <span class="hidden md:inline">Linkedin</span>
         </a>
       </li>
-      <li class="text-md">
+      <li class="text-xl md:text-md">
         <a href="/resume/Gustavo-Valentim_Resume_EN.pdf" target="_blank">
           <i class="fa-solid fa-file-lines"></i>
           <span class="hidden md:inline">Resume</span>
@@ -49,23 +49,51 @@
     </ul>
   </nav>
 
-  <main class="w-80 md:w-180 mx-auto flex flex-col md:flex-row gap-8">
-    <div>
-      <img src="/static/img/Gustavo-Valentim_picture.png" alt="Gustavo Valentim picture"
-        class="rounded-md h-56 mx-auto md:h-auto">
+  <main class="w-80 md:w-180 mx-auto flex flex-col gap-8">
+    <div class="flex flex-col md:flex-row gap-8">
+      <div>
+        <img src="/static/img/Gustavo-Valentim_picture.png" alt="Gustavo Valentim picture"
+          class="rounded-md h-56 mx-auto md:h-auto">
+      </div>
+
+      <div>
+        <h1 class="text-3xl">Gustavo Valentim</h1>
+        <h2 class="text-xl mt-2">Senior Software Engineer</h2>
+        <div class="flex flex-col gap-8 mt-4">
+          <p>
+            I'm a software engineer from Brazil with a decade of experience, specializing in backend development, cloud
+            infrastructure, and software architecture.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <h1 class="text-3xl">Gustavo Valentim</h1>
-      <h2 class="text-xl mt-2">Senior Software Engineer</h2>
-      <div class="flex flex-col gap-8 mt-4">
-        <p>
-          I'm a software engineer from Brazil with a decade of experience, specializing in backend development, cloud
-          infrastructure, and software architecture.
-        </p>
+    <hr />
+
+    <h2 class="text-xl">Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="max-w-sm bg-white border border-gray-200 rounded-t-lg">
+        <img src="/static/img/GameOfLife_Screenshot.png" alt="Game of Life screenshot" class="rounded-t-lg">
+        <div class="p-5">
+          <h5 class="mb-2 text-xl font-bold">Conway's Game of Life</h5>
+          <p class="mb-3">A data visualization program that runs Conway's Game of Life.</p>
+          <hr />
+          <div class="flex justify-end mt-3">
+            <a class="ml-auto hover:border-b-2 duration-150"
+              href="https://github.com/gustavosvalentim/game-of-life/releases">
+              Download
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </main>
+
+  <footer class="w-full flex justify-center mt-8 mb-2 pt-4 border-t-1">
+    Developed by Gustavo Valentim
+  </footer>
 
   <script src="/static/scripts/i18n.js"></script>
 </body>
